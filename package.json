@@ -6,6 +6,8 @@
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
+    "env-cmd": "^10.1.0",
+    "firebase": "^7.24.0",
     "node-sass": "^4.14.1",
     "react": "^16.14.0",
     "react-dom": "^16.14.0",
@@ -13,9 +15,9 @@
     "react-scripts": "3.4.3"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
+    "start": " react-scripts start env-cmd .env",
+    "build": "react-scripts build env-cmd .env",
+    "test": " react-scripts test env-cmd .env",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
